@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+:root{
+    --verde: #092d7a;
+    --azul: #c5f2ff;
+    --gradiente: linear-gradient(135deg, var(--verde) 0%, var(--azul) 99%);
+    --gradientetransparente: linear-gradient(180deg, var(--verde) 0%, var(--azul) 85%, rgba(255,0,0, 0) 100%);
+    --text-dark: #1b1e3a;
+
+}
+
+
+.text-center{
+    color: var(--text-dark);
+}
+
+
+/*MENU*/
+
+.menubar{
+    background: rgb(172, 172, 173);
+    box-shadow: 0 -10px 10px -10px var(--verde);
+}
+
+.logo{
+    display: inline-block; 
+    transition: .2s ease; 
+    color: var(--text-dark);
+    width: 2.5%;
+}
+.logo:hover{
+    color: var(--verde);
+    transform: translateY(-20%); 
+}
+
+.menutext{
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    display: inline-block; 
+    transition: .2s ease; 
+
+}
+
+.menutext:hover{
+    color: var(--verde);
+    transform: translateY(-20%); 
+}
+
+
+/* HOME */
+
+.box{
+    background-image: var(--gradientetransparente);
+    height: 30vw;
+    vertical-align: middle;
+
+}
+
+.boxtext{
+    color:#fff;
+    text-shadow: 3px 3px 1px #2bb2e7;
+    position: relative;
+    top: 35%;
+    vertical-align: middle;
+}
+
+.boxtitle{
+    font-weight: 650;
+}
+
+.caixamissao{
+    width: 25%;
+}
+
+.missaoexplica{
+    word-wrap: break-word;
+}
+
+.imgmain{
+    width: 300px;
+    object-fit: cover;
+}
+
+/* SOBRE */
+
+.imagemtime{
+    width: 50vw;
+}
+
+.quemsomos{
+    position: relative;
+    left: 25vw;
+    width: 50%;
+}
+
+/* PROJETOS */
+
+.galeria{
+    width: 25vw;
+}
+
+.galeriabox{
+    justify-content: center;
+}
+
+/* CONTATO */
+
+.contatodiv{
+    box-shadow: inset  0 0 3px var(--verde);
+    width: 25%;
+    position: relative;
+    left: 40vw;
+}
+
+.contato{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.email::before{
+    margin-right: 5%;
+    align-self: center;
+    font-family: "Material Icons";
+    content: "\e0be";
+    color: var(--gradiente);
+}
+
+.telefone::before{
+    margin-right: 5%;
+    align-self: center;
+    font-family: "Material Icons";
+    content: "\e0b0";
+}
+
+.endereco::before{
+    margin-right: 5%;
+    align-self: center;
+    font-family: "Material Icons";
+    content: "\e88a";
+}
